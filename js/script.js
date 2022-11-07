@@ -39,13 +39,29 @@ const arrWorkers = [
 
 console.log(arrWorkers);
 
-const printText = document.querySelector(".card");
+const printText = document.querySelector(".cards");
 
 for (let i = 0; i < arrWorkers.length; i++) {
-    printText.innerHTML += `${arrWorkers[i].photo}, ${arrWorkers[i].name}, ${arrWorkers[i].task}`;
+    
+    const workerImg = document.createElement("div");
+    workerImg.classList.add("photo");
+
+    workerImg.innerHTML += `${arrWorkers[i].photo}`;
+    printText.append(workerImg);
+
+    const workerName = document.createElement("div");
+    workerName.classList.add("name");
+
+    workerName.innerHTML += `${arrWorkers[i].name}`;
+    printText.append(workerName);
+
+    const workerTask = document.createElement("div");
+    workerTask.classList.add("task");
+
+    workerTask.innerHTML += `${arrWorkers[i].task}`;
+    printText.append(workerTask);
+
 } 
-		
- 		
 		
 
 
