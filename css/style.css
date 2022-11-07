@@ -30,6 +30,10 @@ body {
     gap: 1rem;
 }
 
+.photo {
+    width: 100%;
+}
+
 .card {
     width: calc((100% - 2rem) / 3);
 }
