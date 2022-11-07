@@ -39,6 +39,11 @@ const arrWorkers = [
 
 console.log(arrWorkers);
 
+const printText = document.querySelector(".card");
+
+for (let i = 0; i < arrWorkers.length; i++) {
+    printText.innerHTML += `${arrWorkers[i].photo}, ${arrWorkers[i].name}, ${arrWorkers[i].task}`;
+}
 		
  		
 		
