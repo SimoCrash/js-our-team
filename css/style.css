@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F1;
 }
 
 .container {
@@ -28,13 +29,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-.photo {
-    width: 100%;
+    
 }
 
 .card {
     width: calc((100% - 2rem) / 3);
+    background-color: white;
+    margin-bottom: 1rem;
 }
 
+.photo img{
+    width: 100%;
+}
