@@ -22,3 +22,15 @@ body {
     margin-bottom: 2rem;
     color: black;
 }
+
+.cards {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    width: calc((100% - 2rem) / 3);
+}
+
